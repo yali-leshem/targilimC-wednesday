@@ -3,7 +3,7 @@
 * Description: 3 functions to use on sorted arrays in order to remove duplicates within them, using dynamic memory
 * Author: Yali Leshem
 -------------------------------------------------------*/
-#include <Stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 #define MAX_LEN 128
@@ -196,4 +196,5 @@ int main () {
 
     free(new_sorted); // freeing the dynamic memory allocation used in functions
     return SUCCESS;
+
 }
