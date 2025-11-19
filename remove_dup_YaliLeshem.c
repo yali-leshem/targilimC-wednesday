@@ -161,7 +161,7 @@ int main () {
     }
 
     // If there was both an increase and a decrease - not sorted, return failure and exit. Do the same if only 1 element inserted
-    if (inc && dec || index < 2) {
+    if ((inc && dec) || index < 2) {
         printf("bad input. exiting program \n");
         return FAILURE;
     }
@@ -169,7 +169,7 @@ int main () {
     count = index;
     new_sorted = sorted_arr;
 
-    printf("Before sorting: \n");
+    printf("Before removing any duplicates: \n");
     print_arr(new_sorted, count);
 
     new_sorted = removeDup_ver1(&count, sorted_arr);
@@ -198,3 +198,4 @@ int main () {
     return SUCCESS;
 
 }
+
